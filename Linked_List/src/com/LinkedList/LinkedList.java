@@ -34,5 +34,36 @@ public class LinkedList
             temp = temp.next;
         }
     }
+
+    public void append(int value)
+    {   Node newNode = new Node(value);
+
+        if(head == null)
+        {
+            head = newNode;
+            tail = newNode;   
+        }
+        else{
+            tail.next = newNode;
+            tail = newNode;        
+        }
+        length++;
+    }
+
+    public void prepand(int value)
+    {
+        Node newNode = new Node(value);
+
+        if(head == null)
+        {
+            head = newNode;
+            tail = newNode;
+        }
+        else{
+            newNode.next = head;
+            head = newNode;
+        }
+        length++;
+    }
     
 }
