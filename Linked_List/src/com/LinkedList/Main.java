@@ -7,6 +7,6 @@ public class Main {
         LinkedList mylinkedList = new LinkedList(4);
          
         mylinkedList.printList();
-
+        
     }
 }
