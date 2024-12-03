@@ -6,9 +6,14 @@ public class Main {
         //System.out.println("Hello, World!");
         LinkedList mylinkedList = new LinkedList(2);
         
+        
         mylinkedList.append(3);
         mylinkedList.prepand(1);
         mylinkedList.printList();
+
+        mylinkedList.getHead();
+        mylinkedList.getTail();
+        mylinkedList.getLength();
 
         
     }

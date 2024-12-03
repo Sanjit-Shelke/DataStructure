@@ -13,7 +13,7 @@ public class LinkedList
         this.length = 1; 
     }
     
-    
+    /*Node inner class */
     class Node
     {
         public int value;
@@ -26,6 +26,31 @@ public class LinkedList
 
     }    
 
+    /* Getters Method */
+    public void getHead() {
+        if(head == null)
+        {
+            System.out.println("Head = NULL");
+        }
+        else
+        {
+            System.out.println("Head = " + head.value);
+        }
+    }
+
+    public void getTail() {
+        if (tail == null) {
+            System.out.println("Tail = NULL");
+        }
+        else
+        {
+            System.out.println("Tail = " + tail.value);
+        }
+    }
+
+    public void getLength() {
+        System.out.println("Length = " + length);
+    }
 
     public void printList() {
         Node temp = head;
@@ -65,5 +90,6 @@ public class LinkedList
         }
         length++;
     }
+
     
 }
